@@ -12,7 +12,7 @@ library(pROC)
 require(MASS)
 library (tree)
 
-df <- read.csv("/Users/hannina/Documents/Summer 18/Project/Speed Dating Data.csv", head = TRUE, na.strings = c("NA", ""), stringsAsFactors = F)
+df <- read.csv("/Documents/Summer 18/Project/Speed Dating Data.csv", head = TRUE, na.strings = c("NA", ""), stringsAsFactors = F)
 #str(df)
 dim(df)
 
@@ -768,7 +768,7 @@ confusionMatrix(svm_pred, test_set_F$match)
 
 #Accuracy : 
 
-##Resampling CV (Female) -------Hannina--------
+##Resampling CV (Female) ---------------
 
 #final_F = df_F
 #final_M = df_M
@@ -899,7 +899,8 @@ confusionMatrix(predictions.cart, test_set_F$match, positive = "Yes")
 
 #RANDOMFOREST FOR FEMALE
 
-##Resampling CV (Male) --Hannina
+##Resampling CV (Male) --
+
 
 ```{r} 
 #final_F = df_F
